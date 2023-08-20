@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    height:150px;
+    width: 150px;
+}
+
+.nav h1{
+    font-size: 40px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0%; 
+    height: 4px;
+    border-radius: 3px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+    
+.nav ul li:hover::after{ 
+    width: 100%;  
+}
+
+/*----------------------------------------------*/
+
+.home{
+    height: 100vh;
+    width:100%;
+    background-image: url(images/yoga_home.jpg);   
+    background-size:cover;
+    background-attachment: fixed; 
+}
+
+.programs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.heading{
+    font-size:55px;
+    color: black;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.container_programs{
+    background-color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.program_name{
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+
+.program_desc{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-style: italic;
+}
+
+.level{
+    font-size: 15px;
+    padding-top: 15px;
+    font-style: italic;
+}
